@@ -33,6 +33,6 @@ Quando è il tuo turno, inserisci le coordinate della mossa nel formato:
 
 *(Esempio: `5 1 4 2` per muovere dalla cella (5,1) alla (4,2))*.
 
-### Documentazione
+## Documentazione
 
 Per un'analisi approfondita della modellazione del problema, della struttura del software e dei dettagli matematici dell'algoritmo, consulta la *[Relazione di Progetto]* inclusa nel repository.
