@@ -1,38 +1,38 @@
-# Checkers AI (Dama Italiana)
+# Checkers AI (Italian Draughts)
 
-**Autore:** Federica Di Dio 
+**Author:** Federica Di Dio  
+**Course:** Artificial Intelligence - University of Catania - Master's Degree in Computer Science
 
-**Corso:** Intelligenza Artificiale - Università degli Studi di Catania - Laurea Magistrale in Informatica
+A Python implementation of Italian Draughts, allowing a human player to compete against an intelligent agent powered by the Minimax algorithm with Alpha-Beta pruning.
 
-Un'implementazione del gioco della dama in Python che permette a un utente umano di sfidare un agente intelligente basato sull'algoritmo Minimax con potatura α-β.
+## Features
+* **AI Engine**: Utilizes the Minimax algorithm to determine the optimal move by anticipating the opponent's counter-moves.
+* **Optimization**: Implements Alpha-Beta pruning to explore the game tree efficiently, discarding non-promising branches to minimize computation time.
+* **Advanced Heuristics**: The evaluation function calculates the score by weighing material and positional advantages (e.g., progression towards king promotion).
+* **Robustness**: Includes input error handling via try-except blocks and rigorous move validation to ensure compliance with official rules.
 
-## Caratteristiche
-* **Motore AI**: Utilizza l'algoritmo Minimax per determinare la mossa ottimale, anticipando le contromosse dell'avversario.
-* **Ottimizzazione**: Implementa la potatura α-β per esplorare l'albero delle decisioni, scartando rami non promettenti per ridurre i tempi di calcolo.
-* **Euristiche Avanzate**: La funzione di valutazione calcola il punteggio pesando il materiale e il vantaggio posizionale (avanzamento verso la promozione a dama).
-* **Robustezza**: Gestione degli errori di input tramite blocchi try-except e controllo della validità delle mosse per garantire il rispetto rigoroso delle regole.
+## Project Logic
+The game is modeled on an 8x8 board with a weighted scoring hierarchy:
+* **Pawn**: 10 base points + advancement bonus.
+* **King**: 20 base points + doubled positional bonus.
+* **Terminal States**: Infinite values assigned for win/loss conditions to terminate recursion.
 
-## Logica del Progetto
 
-Il gioco è modellato su una scacchiera 8x8 con una gerarchia di valori per valutare le configurazioni:
-* **Pedina**: 10 punti base + bonus avanzamento.
-* **Dama**: 20 punti base + bonus posizionale raddoppiato.
-* **Stati Terminali**: Valori infiniti assegnati per vittoria o sconfitta per terminare la ricorsione.
 
-La profondità di ricerca standard è impostata a 4, garantendo una risposta immediata.
+The default search depth is set to 4, balancing decision quality with immediate response times.
 
-## Come avviare il gioco
-1. Assicurati di avere Python installato.
-2. Scarica il file `dama.py`.
-3. Avvia il gioco da terminale: `python dama.py`
+## Getting Started
+1. Ensure you have Python installed.
+2. Download the `dama.py` file.
+3. Run the game from your terminal: `python dama.py`
 
-## Istruzioni di gioco
+## Gameplay Instructions
+When it is your turn, enter your move coordinates in the following format:
+`start_row start_column end_row end_column`
 
-Quando è il tuo turno, inserisci le coordinate della mossa nel formato:
-`riga_partenza colonna_partenza riga_destinazione colonna_destinazione`
+*(Example: `5 1 4 2` to move from cell (5,1) to (4,2))*
 
-*(Esempio: `5 1 4 2` per muovere dalla cella (5,1) alla (4,2))*.
+## Documentation
+For an in-depth analysis of the problem modeling, software architecture, and the mathematical details of the algorithm, please refer to the *[Project Report](Relazione.pdf)* included in the repository. 
 
-## Documentazione
-
-Per un'analisi approfondita della modellazione del problema, della struttura del software e dei dettagli matematici dell'algoritmo, consulta la *[Relazione]* inclusa nel repository.
+*Note: The documentation is currently available in Italian.*
