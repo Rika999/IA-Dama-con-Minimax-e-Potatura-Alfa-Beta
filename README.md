@@ -35,4 +35,4 @@ Quando è il tuo turno, inserisci le coordinate della mossa nel formato:
 
 ## Documentazione
 
-Per un'analisi approfondita della modellazione del problema, della struttura del software e dei dettagli matematici dell'algoritmo, consulta la *[Relazione di Progetto]* inclusa nel repository.
+Per un'analisi approfondita della modellazione del problema, della struttura del software e dei dettagli matematici dell'algoritmo, consulta la *[Relazione]* inclusa nel repository.
